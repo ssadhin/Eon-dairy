@@ -268,40 +268,59 @@
 
         <!-- PRIVACY TAB -->
         <div id="privacy" class="tab-content">
-            <h1>Privacy Policy</h1>
-            <div class="subtitle">Privacy Policy &amp; Terms of Service &bull; Last Updated: June 29, 2026</div>
+            <h1>Privacy Policy &amp; Terms</h1>
+            <div class="subtitle">Last Updated: August 23, 2026 &bull; Developed by Asani Soft / Asani Studio BD</div>
 
             <h2>1. Introduction</h2>
-            <p>Eon Diary ("we", "our", or "the App") is a privacy-first personal journaling application. We fundamentally believe that your personal thoughts and memories belong solely to you. This Privacy Policy explains how we handle your data when you use our application.</p>
+            <p>Eon Diary ("we", "our", or "the App"), developed by <strong>Asani Soft</strong>, is a privacy-first personal journaling and life-tracking application. We fundamentally believe that your personal thoughts, memories, and media belong solely to you. This Privacy Policy explains how we handle your data when you use the Eon Diary application.</p>
 
-            <h2>2. Data Collection and Storage</h2>
-            <p>Eon Diary does not collect, transmit, or store any of your personal data on our own servers. The App operates entirely by connecting directly to your personal Google Drive account.</p>
+            <h2>2. Information We Collect and How It Is Used</h2>
+            <p>Eon Diary is designed with maximum privacy and minimal data collection. When you use the App, the following information may be collected or processed:</p>
+
+            <h3>2.1. Personal Info: Email Address</h3>
+            <p>When you choose to connect your Google account to enable cloud sync and backup, Eon Diary collects and processes your <strong>Email address</strong> via Google OAuth. This is used strictly for:</p>
             <ul>
-                <li><strong>Diary Entries &amp; Metadata:</strong> Your text entries, timestamps, and tags are stored securely in a private Google Sheet located within your personal Google Drive.</li>
-                <li><strong>Multimedia:</strong> Any images, videos, audio recordings, or sketches you add to your diary are uploaded directly to a dedicated folder in your personal Google Drive.</li>
+                <li><strong>App Functionality:</strong> To authenticate your identity and connect the App to your personal Google Drive and Google Sheet so your diary entries, multimedia, and settings stay synced across sessions.</li>
+                <li><strong>Account Management:</strong> To identify your account session locally on your device and manage your sign-in state.</li>
+            </ul>
+            <p>Your email address is stored locally on your device and is transmitted directly to Google's authentication servers. <strong>We do not store your email address on any developer servers, and we never share it with third parties.</strong> Data collection is optional; you may use the app locally without signing into a Google account.</p>
+
+            <h3>2.2. User Content (Diary Entries &amp; Media)</h3>
+            <p>All user content created within the app is stored in your own cloud infrastructure:</p>
+            <ul>
+                <li><strong>Text, Tags, and Timestamps:</strong> Stored securely in a private Google Sheet on your personal Google account.</li>
+                <li><strong>Multimedia Files (Images, Videos, Voice Recordings, Sketches):</strong> Uploaded directly to a dedicated hidden folder within your personal Google Drive.</li>
             </ul>
 
-            <h2>3. Use of Google User Data</h2>
-            <p>To provide its core functionality, the App requests access to your Google Drive via Google OAuth. We use this access <strong>strictly</strong> to read, write, and manage your diary entries and associated media files within your own Google Drive.</p>
+            <h2>3. Google User Data &amp; Limited Use Compliance</h2>
+            <p>To provide cloud sync, Eon Diary requests permission to access your Google Drive via Google OAuth. We access your Drive strictly to read, write, and manage your diary files.</p>
             
             <div class="highlight-box">
-                Eon Diary's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, including the Limited Use requirements.
+                Eon Diary's use and transfer to any other app of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, including the Limited Use requirements.
             </div>
 
             <h2>4. Data Sharing and Third Parties</h2>
-            <p>We do not have access to your diary entries, Google account information, or media files. Because all data is stored exclusively on your personal Google Drive, we do not—and technically cannot—share, sell, or transfer your personal data to any third parties, advertising networks, or data brokers.</p>
+            <p><strong>We do not share, sell, rent, or transfer your personal data or email address to any third parties, advertisers, or data brokers.</strong> Because all data transfers occur directly between your device and Google's official APIs, no middleman server ever accesses your personal content.</p>
 
-            <h2>5. Security</h2>
-            <p>Your data's cloud security is handled by Google's world-class infrastructure. Locally, the App provides an optional PIN Code lock to prevent unauthorized physical access to the diary on your device.</p>
+            <h2>5. Data Security &amp; Encryption</h2>
+            <p>All data transmitted between Eon Diary and Google APIs is encrypted in transit using industry-standard <strong>HTTPS/TLS protocols</strong>. Furthermore, the App offers an optional local <strong>PIN Code / Biometric Lock</strong> to protect your diary from unauthorized physical access on your device.</p>
 
-            <h2>6. User Consent and Revocation</h2>
-            <p>By logging in via Google, you consent to the App managing its specific files within your Google Drive. You can revoke this access at any time by visiting your Google Account settings (Security -> Third-party apps with account access) and removing Eon Diary.</p>
+            <h2>6. Account &amp; Data Deletion Request (Data Retention Policy)</h2>
+            <p>You have complete ownership and control over all data associated with Eon Diary. You can delete your account and all associated data at any time:</p>
+            <ul>
+                <li><strong>Delete Local App Data:</strong> Open your device's <em>Settings &rarr; Apps &rarr; Eon Diary &rarr; Storage &rarr; Clear Data</em>. This immediately erases your local preferences, cached email address, and authentication tokens.</li>
+                <li><strong>Delete Cloud Diary Data:</strong> Log into your <a href="https://drive.google.com" target="_blank">Google Drive</a> at any time to view and permanently delete your Eon Diary folder and Google Sheets database.</li>
+                <li><strong>Revoke Account Access:</strong> Visit your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account Permissions</a> and remove Eon Diary to immediately invalidate all access tokens.</li>
+                <li><strong>Request Assisted Deletion:</strong> If you need any assistance or have questions regarding data deletion, contact us at <a href="mailto:asanistudiobangladesh@gmail.com">asanistudiobangladesh@gmail.com</a> with the subject line <em>"Data Deletion Request"</em>. Requests will be acknowledged and processed within 24 to 48 hours.</li>
+            </ul>
 
             <h2>7. Terms of Service</h2>
-            <p>Eon Diary is provided "as is", without warranty of any kind. The app operates entirely on your personal Google Drive and does not use centralized servers. We are not responsible for any data loss or unauthorized access resulting from compromised Google accounts. By using the app, you agree to take full responsibility for the data you store. The app is strictly for personal journaling and claims no ownership over any of your content.</p>
+            <p>Eon Diary is provided "as is", without warranty of any kind. The app operates entirely on your personal Google Drive and does not use centralized middleman servers. We are not responsible for any data loss or unauthorized access resulting from compromised Google accounts. By using the app, you agree to take full responsibility for the data you store. The app is strictly for personal journaling and claims no ownership over any of your content.</p>
 
-            <h2>8. Contact</h2>
-            <p>If you have any questions about this Privacy Policy or Terms of Service, please contact the developer at: <a href="mailto:asanistudiobangladesh@gmail.com">asanistudiobangladesh@gmail.com</a>.</p>
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions or feedback regarding this Privacy Policy or data handling practices, please contact us at:</p>
+            <p><strong>Developer:</strong> Asani Soft / Asani Studio BD<br>
+            <strong>Email:</strong> <a href="mailto:asanistudiobangladesh@gmail.com">asanistudiobangladesh@gmail.com</a></p>
         </div>
 
     </div>
@@ -318,11 +337,29 @@
                 button.classList.remove('active');
             });
 
-            document.getElementById(tabId).classList.add('active');
-            event.currentTarget.classList.add('active');
+            const targetContent = document.getElementById(tabId);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+            if (event && event.currentTarget) {
+                event.currentTarget.classList.add('active');
+            } else {
+                const matchingBtn = document.querySelector(`.tab-btn[onclick*="'${tabId}'"]`);
+                if (matchingBtn) matchingBtn.classList.add('active');
+            }
             
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        // Auto open tab based on URL hash
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '').toLowerCase();
+            if (hash === 'privacy' || hash === 'terms' || hash === 'delete-account') {
+                openTab(null, 'privacy');
+            } else if (hash === 'manual' || hash === 'guide') {
+                openTab(null, 'manual');
+            }
+        });
     </script>
 </body>
 </html>

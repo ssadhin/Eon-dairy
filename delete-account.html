@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account &amp; Data Deletion - Eon Diary (Asani Soft)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FDFBF5;
+            --grid-color: #F0E6D8;
+            --text-color: #4A4036;
+            --accent-color: #B59C82;
+            --paper-bg: #FFFFFF;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            background-image: 
+                linear-gradient(var(--grid-color) 1px, transparent 1px),
+                linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+            background-size: 30px 30px; 
+            background-position: center top;
+            font-family: 'Lora', serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .tabs-nav {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(74, 64, 54, 0.05);
+            border: 1px solid rgba(181, 156, 130, 0.2);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            cursor: pointer;
+            padding: 8px 16px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-color);
+            background: rgba(181, 156, 130, 0.1);
+        }
+
+        .tab-btn.active {
+            background: var(--text-color);
+            color: #FDFBF5;
+            font-weight: 600;
+        }
+
+        .paper-container {
+            max-width: 850px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 80px 80px 80px;
+            border-radius: 8px;
+            box-shadow: 0 15px 35px rgba(74, 64, 54, 0.08), 
+                        0 5px 15px rgba(74, 64, 54, 0.04);
+            border: 1px solid rgba(181, 156, 130, 0.2);
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .paper-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50px;
+            width: 2px;
+            background-color: rgba(181, 156, 130, 0.25);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: var(--accent-color);
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            border-bottom: 1px solid rgba(181, 156, 130, 0.25);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            font-size: 1.15rem;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent-color);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: var(--text-color);
+            border-bottom: 1px solid var(--text-color);
+        }
+
+        .card {
+            background-color: rgba(181, 156, 130, 0.08);
+            padding: 25px 30px;
+            border-radius: 8px;
+            border: 1px solid rgba(181, 156, 130, 0.2);
+            margin: 25px 0;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 20px 10px; }
+            .paper-container { padding: 40px 30px; }
+            .paper-container::before { left: 20px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tabs-nav">
+        <a href="index.html" class="tab-btn">Home Page</a>
+        <a href="index.html#manual" class="tab-btn">User Manual</a>
+        <a href="privacy.html" class="tab-btn">Privacy &amp; Terms</a>
+        <a href="delete-account.html" class="tab-btn active">Data Deletion</a>
+    </div>
+
+    <div class="paper-container">
+        <h1>Account &amp; Data Deletion Request</h1>
+        <div class="subtitle">Eon Diary &bull; Developer: Asani Soft / Asani Studio BD</div>
+
+        <p>This page describes how users of <strong>Eon Diary</strong> (developed by <strong>Asani Soft</strong>) can request and execute the complete deletion of their account, email address, and all associated personal data.</p>
+
+        <h2>1. Self-Service Account &amp; Data Deletion (Instant)</h2>
+        <p>Because Eon Diary does not store your journal data on developer servers and instead connects directly to your personal Google Drive account, you have immediate and total control over deleting your data at any time:</p>
+
+        <div class="card">
+            <h3>Step 1: Delete Local Data &amp; Disconnect Account</h3>
+            <ol>
+                <li>Open the <strong>Eon Diary</strong> app on your Android device.</li>
+                <li>Go to <strong>Settings</strong> &rarr; tap <strong>Log Out / Disconnect Account</strong>. This erases the cached email address and session tokens from your device.</li>
+                <li>Alternatively, open your device's <strong>Settings</strong> &rarr; <strong>Apps</strong> &rarr; <strong>Eon Diary</strong> &rarr; <strong>Storage &amp; Cache</strong> &rarr; tap <strong>Clear Storage / Clear Data</strong>.</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h3>Step 2: Delete Stored Diary Entries &amp; Media Files</h3>
+            <ol>
+                <li>Open <a href="https://drive.google.com" target="_blank">Google Drive</a> in your browser or app using your Google Account.</li>
+                <li>Locate the <strong>Eon Diary</strong> folder and the associated <strong>Google Sheet</strong>.</li>
+                <li>Right-click or tap the options menu and select <strong>Delete / Move to Trash</strong>, then empty your Trash to permanently delete all journal entries, voice notes, photos, and sketches.</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h3>Step 3: Revoke App Permissions</h3>
+            <ol>
+                <li>Visit your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account Third-Party Access Settings</a>.</li>
+                <li>Select <strong>Eon Diary</strong> and click <strong>Remove Access / Delete Connection</strong>. This immediately and permanently disables the app's OAuth token.</li>
+            </ol>
+        </div>
+
+        <h2>2. Types of Data Deleted vs. Kept</h2>
+        <ul>
+            <li><strong>Email Address:</strong> Immediately removed upon logout, app data clearance, or uninstallation. No copy is kept on any external server.</li>
+            <li><strong>Diary Entries, Notes &amp; Media:</strong> Permanently deleted when you delete the corresponding files in your personal Google Drive. Zero retention by Asani Soft.</li>
+            <li><strong>Retention Period:</strong> 0 days. We do not maintain backups or logs of your private data.</li>
+        </ul>
+
+        <h2>3. Request Assisted Deletion via Email</h2>
+        <p>If you would like developer assistance or have questions regarding data handling and deletion, you may send a formal deletion request:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:asanistudiobangladesh@gmail.com?subject=Eon%20Diary%20Data%20Deletion%20Request">asanistudiobangladesh@gmail.com</a></li>
+            <li><strong>Subject:</strong> <em>Eon Diary Data Deletion Request</em></li>
+            <li><strong>Processing Time:</strong> Requests are processed within 24–48 hours.</li>
+        </ul>
+
+        <h2>4. Contact Developer</h2>
+        <p><strong>Developer:</strong> Asani Soft / Asani Studio BD<br>
+        <strong>Email:</strong> <a href="mailto:asanistudiobangladesh@gmail.com">asanistudiobangladesh@gmail.com</a></p>
+    </div>
+</body>
+</html>
